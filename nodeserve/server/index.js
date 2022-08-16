@@ -5,13 +5,10 @@ const fs = require('fs')
 const server = http.createServer(function (request, response) {
     console.log(request.url)
     
-    if(request.url == '/'){
-        fs.readFile('../client/index.html', function (error, content) {
-            response.end(content)
-        })
-    }
+    fs.readFile('../cliente/index.html', function (error, content) {
+        response.end(content)
+    })
     
-    response.end('Teste')
 })
 
 server.listen(8080)
