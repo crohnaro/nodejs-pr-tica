@@ -18,8 +18,8 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.get('/sobre', (req, res) => {
-    res.send('Teste1')
+app.get('/posts', (req, res) => {
+    res.render('posts')
 })
 
 //404 error
