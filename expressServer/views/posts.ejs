@@ -5,6 +5,12 @@
     <div>
         <h3><%= item.title %> </h3>
         <p><%= item.text %></p>
+
+        <% if (item.stars) {  %> 
+            <% for( let index = 0; index < item.stars; index++ ) { %>
+                <img src="https://www.clipartmax.com/png/full/175-1753277_free-image-on-pixabay-star-icon-png.png" width="20" 
+            <% } %>
+        <% } %>     
     </div>
 <%  }) %> 
 

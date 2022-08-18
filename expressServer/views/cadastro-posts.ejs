@@ -1,0 +1,21 @@
+<%- include('partials/head.ejs') %> 
+<h1>teste</h1>
+
+<% if(cadastrado){ %>
+    <h1>Cadastro feito</h1>
+<% }  %>  
+
+<form action="/salvar-posts" method="post">
+    <div>
+        <label for="">Titulo</label>
+        <input name="titulo" type="text" placeholder="digite">
+    </div>
+    <div>
+        <label for="">Texto</label>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <button type="submit">Cadastrar</button>
+    </div>
+</form>
+
